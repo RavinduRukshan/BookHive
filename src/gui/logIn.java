@@ -36,7 +36,6 @@ public class logIn extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(600, 366));
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 40)); // NOI18N
@@ -69,7 +68,7 @@ public class logIn extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Forgot Password");
 
-        jButton2.setBackground(new java.awt.Color(0, 102, 255));
+        jButton2.setBackground(new java.awt.Color(0, 51, 255));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Login");
 
