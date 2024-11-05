@@ -1477,7 +1477,7 @@ public class AdminPanel extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel39.setBackground(new java.awt.Color(0, 153, 102));
+        jPanel39.setBackground(new java.awt.Color(0, 102, 102));
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
         jPanel39.setLayout(jPanel39Layout);
