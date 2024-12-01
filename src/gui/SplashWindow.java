@@ -3,12 +3,15 @@ package gui;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
 //import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
+import javax.swing.SwingUtilities;
+
 
 public class SplashWindow extends javax.swing.JFrame {
 
-    /**
-     * Creates new form SplashWindow
-     */
+    public static SplashWindow splashWindow;
+    public static AdminPanel adminPanel;
+    
+    
     public SplashWindow() {
         initComponents();
         setSvg();
@@ -233,15 +236,21 @@ public class SplashWindow extends javax.swing.JFrame {
                         e.printStackTrace();
                     }
                 }
-//                splashWindow.dispose();
-//                home = new Home();
-//                home.setVisible(true);
-//                home.signInWindow();
+                // Close the splash window and open the AdminPanel
+            SwingUtilities.invokeLater(() -> {
+                dispose();
+                AdminPanel adminPanel = new AdminPanel();
+                adminPanel.setVisible(true);
+            });
 
             }
         });
         lodingThread.start();
     }
+    
+    
+    
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
